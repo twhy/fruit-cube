@@ -31,7 +31,6 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(-15deg) rotateY(15deg);
   transition: all 0.85s cubic-bezier(0.175, 0.885, 0.320, 1.275);
-  
 }
 
 .cube-face {
@@ -75,16 +74,20 @@ body {
 
 #play:not(:checked) ~ #radio-back:checked ~ .scene .cube {
   transform: rotateX(15deg) rotateY(195deg);
-} 
+}
+
 #play:not(:checked) ~ #radio-left:checked ~ .scene .cube {
   transform: rotateX(-15deg) rotateY(75deg);
-} 
+}
+
 #play:not(:checked) ~ #radio-right:checked ~ .scene .cube {
   transform: rotateX(15deg) rotateY(-75deg);
 }
+
 #play:not(:checked) ~ #radio-top:checked ~ .scene .cube {
   transform: rotateY(15deg) rotateX(-105deg);
-}  
+}
+
 #play:not(:checked) ~ #radio-bottom:checked ~ .scene .cube {
   transform: rotateY(-15deg) rotateX(105deg);
 }
